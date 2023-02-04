@@ -3,12 +3,7 @@
 #* Задайте список из нескольких чисел. Напишите программу, которая найдёт сумму элементов списка, стоящих на нечётной позиции
 
 def sum_on_odd_pos(lst: list) -> int | float:
-    result = 0
-
-    for i in range(1, len(lst), 2):
-        result += lst[i]
-
-    return result
+    return sum(lst[1::2])
 
 
 # number_els = int(input('Enter the number of elements: '))
