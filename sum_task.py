@@ -35,3 +35,5 @@ for el in lst_in:
 
     sum_result = sum_on_odd_pos(el)
     print(f'Sum of elements on odd positions: {sum_result}')
+
+print('That\'s all, folks!')
