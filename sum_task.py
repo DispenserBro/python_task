@@ -24,10 +24,14 @@ def sum_on_odd_pos(lst: list) -> int | float:
 
 
 # Примеры с сайта
-lst_in = [2, 3, 5, 9, 3] # -> 12
+lst_in = [
+    [2, 3, 5, 9, 3], # -> 12
+    [1, 2, 3, 4, 5], # -> 6
+    [10, 11, 15, 24] # -> 35
+        ]
 
+for el in lst_in:
+    print('Full list:', el, sep='\n')
 
-print('Full list:', lst_in, sep='\n')
-
-sum_result = sum_on_odd_pos(lst_in)
-print(f'Sum of elements on odd positions: {sum_result}')
+    sum_result = sum_on_odd_pos(el)
+    print(f'Sum of elements on odd positions: {sum_result}')
